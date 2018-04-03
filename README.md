@@ -1,17 +1,18 @@
-Kotlin JS Hello World Demo
+Kotlin CommonJS Demo
 =======================
 
-Hello world from kotlin-js.
+Use Kotlin to invoke javascript functions defined in a commonjs module.
 
 
 Run:
 
 ```
+npm install
 ./gradlew clean compileKotlin2Js
-npm install -g http-server
-http-server .
+cp ./src/main/resources/hello.js node_modules/hello.js
+node ./build/classes/kotlin/main/kotlin-commonjs-hello-world-demo.js
 ```
 
-Open <http://localhost:8080/index.html> from your browser, you will see "Hello, Kotlin!" in console of your browser's developer panel.
+You will see "Hello, world!" in console.
 
 

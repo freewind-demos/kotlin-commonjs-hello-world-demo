@@ -1,8 +1,10 @@
 package example
 
+@JsModule("hello")
+external val hello: dynamic = definedExternally
+
 fun main(args: Array<String>) {
-    console.log(hello("Kotlin JS"))
+    hello.hello("Kotlin, CommonJS")
 }
 
-fun hello(name:String) = "Hello, $name!"
 
