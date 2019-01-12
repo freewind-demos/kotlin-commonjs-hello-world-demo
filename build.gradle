@@ -15,6 +15,7 @@ apply plugin: 'kotlin2js'
 compileKotlin2Js.kotlinOptions.moduleKind = "commonjs"
 
 repositories {
+    mavenLocal()
     jcenter()
 }
 
